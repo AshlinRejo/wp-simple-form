@@ -46,6 +46,7 @@
     "prefer-destructuring": 0,
     "no-param-reassign": 0,
     "curly": "error",
+    "no-shadow": "off",
     "no-empty-function": "error",
     "no-global-assign": "error",
     "yoda": [ "error", "always" ],

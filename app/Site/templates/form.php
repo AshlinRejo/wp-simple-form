@@ -14,12 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="wpsf-form-title-block">
 			<h3><?php esc_html_e( 'Feedback form', 'wp-simple-form' ); ?></h3>
 		</div>
+		<div class="wpsf-form-success-message-block"></div>
 		<div class="wpsf-form-block">
 			<div class="wpsf-form-block-label">
 				<label for="wpsf-name"><?php esc_html_e( 'Name', 'wp-simple-form' ); ?> <span class="required">*</span></label>
 			</div>
 			<div class="wpsf-form-block-field">
-				<input name="wpsf_name" id="wpsf-name" placeholder="<?php esc_attr_e( 'Enter your name', 'wp-simple-form' ); ?>" value=""/>
+				<input name="name" id="wpsf-name" placeholder="<?php esc_attr_e( 'Enter your name', 'wp-simple-form' ); ?>" value=""/>
 			</div>
 		</div>
 		<div class="wpsf-form-block">
@@ -27,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<label for="wpsf-feedback"><?php esc_html_e( 'Feedback', 'wp-simple-form' ); ?> <span class="required">*</span></label>
 			</div>
 			<div class="wpsf-form-block-field">
-				<textarea name="wpsf_feedback" id="wpsf-feedback" placeholder="<?php esc_attr_e( 'Enter your feedback', 'wp-simple-form' ); ?>"></textarea>
+				<textarea name="feedback" id="wpsf-feedback" placeholder="<?php esc_attr_e( 'Enter your feedback', 'wp-simple-form' ); ?>"></textarea>
 			</div>
 		</div>
 		<div class="wpsf-form-block">

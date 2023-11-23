@@ -54,6 +54,7 @@ class Plugin {
 		}
 		$this->load_text_domain();
 		$this->register_events();
+		$this->register_apis();
 		$this->loaded = true;
 	}
 
@@ -68,6 +69,20 @@ class Plugin {
 			( new $event_class() )->hooks();
 		}
 	}
+
+	/**
+	 * Register APIs
+	 * */
+	private function register_apis() {
+		$api_classes = array(
+			'\WPSimpleForm\API\Feedback',
+		);
+		foreach ( $api_classes as $api_class ) {
+			add_action( 'rest_api_init', array( new $api_class(), 'register_routes' ) );
+		}
+	}
+
+
 
 	/**
 	 * Load plugin text-domain

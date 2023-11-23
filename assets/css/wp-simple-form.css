@@ -1,6 +1,8 @@
-div#wpsf-form-container {
+div#wpsf-form-container,
+div#wpsf-feedback-container {
 	border: 1px solid #ddd;
 	padding: 15px;
+	margin: 15px 0;
 }
 
 .wpsf-form-block {
@@ -11,7 +13,8 @@ div#wpsf-form-container {
 	font-weight: 600;
 }
 
-.wpsf-form-title-block h3 {
+.wpsf-form-title-block h3,
+.wpsf-feedback-title-block h3 {
 	font-weight: 600;
 }
 
@@ -19,6 +22,7 @@ div#wpsf-form-container {
 	color: #e2401c;
 }
 
+.wpsf-feedback-filters input,
 .wpsf-form-block-field input,
 .wpsf-form-block-field textarea {
 	border: 1px solid #9d9d9d !important;
@@ -27,6 +31,16 @@ div#wpsf-form-container {
 }
 
 .wpsf-form-block-field input.required,
-.wpsf-form-block-field textarea.required {
+.wpsf-form-block-field textarea.required,
+.wpsf-search.required {
 	border: 1px solid #e2401c !important;
+}
+
+.wpsf-feedback-filters {
+	margin: 15px 0;
+}
+
+.wpsf-form-success-message-block {
+	font-weight: 600;
+	color: #008000;
 }

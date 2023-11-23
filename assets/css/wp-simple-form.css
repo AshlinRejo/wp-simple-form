@@ -1,0 +1,32 @@
+div#wpsf-form-container {
+	border: 1px solid #ddd;
+	padding: 15px;
+}
+
+.wpsf-form-block {
+	margin: 18px 0;
+}
+
+.wpsf-form-block-label label {
+	font-weight: 600;
+}
+
+.wpsf-form-title-block h3 {
+	font-weight: 600;
+}
+
+.wpsf-form-block-label span.required {
+	color: #e2401c;
+}
+
+.wpsf-form-block-field input,
+.wpsf-form-block-field textarea {
+	border: 1px solid #9d9d9d !important;
+	background-color: unset;
+	padding: 5px 10px;
+}
+
+.wpsf-form-block-field input.required,
+.wpsf-form-block-field textarea.required {
+	border: 1px solid #e2401c !important;
+}

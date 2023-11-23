@@ -1,0 +1,39 @@
+{
+  "name": "wp-simple-form/wp-simple-form",
+  "description": "A WordPress plugin to display a form and listing using shortcode.",
+  "homepage": "https://github.com/AshlinRejo",
+  "license": "GPL-2.0+",
+  "authors": [
+	{
+	  "name": "Ashlin Rejo",
+	  "email": "ashlinrejo1@gmail.com",
+	  "homepage": "https://github.com/AshlinRejo"
+	}
+  ],
+  "require-dev": {
+	"wp-coding-standards/wpcs": "^3.0",
+	"yoast/phpunit-polyfills": "^2.0",
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+	"psr-4": {
+	  "WPSimpleForm\\": "app/"
+	}
+  },
+  "autoload-dev": {},
+  "scripts": {
+	"make-pot": "wp i18n make-pot . languages/wp-simple-form.pot --skip-js --exclude=vendor --domain=wp-simple-form",
+    "phpcs": "vendor/bin/phpcs",
+    "phpcs:fix": "vendor/bin/phpcbf",
+    "stylelint": "stylelint 'assets/css/*'",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "eslint": "eslint assets/js/*",
+    "eslint:fix": "eslint --fix assets/js/*",
+    "precommit": "composer run-script phpcs:fix && composer run-script stylelint:fix && composer run-script eslint:fix && composer run-script make-pot"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

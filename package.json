@@ -1,0 +1,16 @@
+{
+  "name": "wp-simple-form",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "stylelint": "stylelint 'assets/css/*'",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "eslint": "eslint assets/js/*",
+    "eslint:fix": "eslint --fix assets/js/*"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^24.1.0",
+    "eslint": "^8.51.0",
+    "stylelint": "^15.10.3"
+  }
+}

@@ -1,0 +1,45 @@
+# Copyright (C) 2023 Ashlin
+# This file is distributed under the same license as the WP Simple Form plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Simple Form 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-simple-form\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-11-23T05:16:59+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: wp-simple-form\n"
+
+#. Plugin Name of the plugin
+msgid "WP Simple Form"
+msgstr ""
+
+#. Description of the plugin
+msgid "A WordPress plugin to display a form and its list using shortcode."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ashlin"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/AshlinRejo"
+msgstr ""
+
+#: inc/wp-simple-form-requirement-checks.php:35
+msgid "WP Simple Form plugin needs to meet the following requirement to functional"
+msgstr ""
+
+#. translators: %1$s - php version of current website, %2$s - php supported version.
+#: inc/wp-simple-form-requirement-checks.php:38
+msgid "Your PHP version: %1$s, Needs at-least %2$s or higher"
+msgstr ""
+
+#. translators: %1$s - Current WordPress version, %2$s - supported version.
+#: inc/wp-simple-form-requirement-checks.php:43
+msgid "Your WordPress version: %1$s, Needs at-least %2$s or higher"
+msgstr ""
